@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <form >
+        <label for="username">enter username</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+        <label for="email">Enter email</label>
+        <input type="email"  id="email" name="email">
+        <br><br>
+        <label for="pass">Enter pass</label>
+        <input type="password" id="pass" name="pass">
+        <br><br>
+        <label for="gender1">
+            <input type="radio" name="gender" id="gender1" value="male" > 
+            Male
+        </label><br>
+        <input type="radio" name="gender" id="gender2" value="female">
+        <label for="gender2">
+            
+            Female
+        </label><br> <br>
+        <input type="radio" name="gender" id="gender3" value="none">none <br>
+        <label for="gender3"></label>
+        <br> 
+        <p>Select your age :</p>
+        <input type="checkbox" name="age" id="op1" value="0-25">
+        <label for="0-25">0-25</label>v  <br>
+        <input type="checkbox" name="age" id="op2" value="26-50">26-50 <br>
+        <input type="checkbox" name="age" id="op3" value="51+">51+ <br>
+        
+        <br><br>
+
+        <label for="ques">Security questions</label>
+        <select name="ques" id="ques">
+            <option value="q1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</option>
+            <option value="q2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad dolor quaerat recusandae eligendi eaque fuga consequuntur autem, asperiores soluta saepe.</option>
+            <option value="q3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, pariatur.</option>
+            <option value="q4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, inventore?</option>
+        
+        </select>
+
+        <label for="answer">Security question answer :</label>
+        <input type="text" name="answer" id="answer">
+
+        <br><br>
+        <label for="bio">Your bio :</label> <br>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Enter text here"></textarea>
+        
+        <br><br>
+        <input type="submit" value="submit the form">
+
+    </form>
+</body>
+</html>

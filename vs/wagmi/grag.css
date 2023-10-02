@@ -1,0 +1,10 @@
+.box{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    background-image: linear-gradient(to bottom right ,red,blue);
+    box-shadow: 10px 10px;
+}
+h1{
+    text-shadow: 3px 3px 3px red;
+}

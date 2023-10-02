@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Your Website with Ad Blocker</title>
+</head>
+<body>
+
+<h1>Welcome to Your Website</h1>
+
+<!-- Example ad placeholders -->
+<div class="ad-banner">
+    <!-- Ad content goes here -->
+</div>
+
+<div class="ad-box">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EIt8YA4zCeI?si=Rg0diHxYlgXjxplk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<script>
+// Define criteria for blocking ads (you can customize this)
+function shouldBlockAd(adElement) {
+    // Check criteria here, e.g., block ads with specific classes or attributes
+    if (adElement.classList.contains('ad-banner') || adElement.classList.contains('ad-box')) {
+        return true;
+    }
+    return false;
+}
+
+// Block ads based on the criteria
+function blockAds() {
+    const adElements = document.querySelectorAll('.ad-banner, .ad-box');
+
+    adElements.forEach(adElement => {
+        if (shouldBlockAd(adElement)) {
+            adElement.style.display = 'none'; // Hide the ad element
+        }
+    });
+}
+
+// Call the blockAds function to block ads when the page loads
+window.addEventListener('load', blockAds);
+</script>
+
+</body>
+</html>
